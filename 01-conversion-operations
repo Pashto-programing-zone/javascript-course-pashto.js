@@ -1,0 +1,43 @@
+/*let score=33
+ 
+console.log(typeof score);
+
+console.log(typeof(score));
+let valueInNumber=Number(score)
+console.log(valueInNumber);
+
+
+
+
+
+(for null)
+
+let score=null
+let valueInNumber=Number(score)
+console.log(valueInNumber)
+
+let score=undefined//this line only show me undefined
+console.log(score)
+let valueInNumber=Number(score) // this line show result NaN
+console.log(valueInNumber)
+
+//for Boolean
+let score= false//this line show me false 
+console.log(score)
+console.log(typeof score)
+let valueInNumber=Number(score) // this line show me value of score in number
+console.log(valueInNumber)*/
+
+
+let no=30 // 
+console.log(no) // this line show value of number 30
+let stringNumber=String(no)// this line convert no to string value
+console.log(stringNumber)
+console.log(typeof stringNumber) // this line show the stringNumber type /no convert to string or not.
+
+
+
+
+
+
+
