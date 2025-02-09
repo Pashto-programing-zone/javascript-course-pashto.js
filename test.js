@@ -7,9 +7,10 @@ console. log(typeof age);
 let state;
 console.log(state)
 // was ba za 1 table jorom
-let accountAge=(14)
+let accountAeg=(14)
 let accountState=("swat")
 let accountNumber=(1234)
+let accountmarks(15)
 let accountNic=(15601)
 let accountEmail=("zain@gamail.com")
-console.table([accountAge,accountState,accountNumber,accountNic,accountEmail])
+console.table([accountAge,accountState,accountNumber,accountNic,accountEmail,accountmarks ])
