@@ -26,7 +26,7 @@ let score= false//this line show me false
 console.log(score)
 console.log(typeof score)
 let valueInNumber=Number(score) // this line show me value of score in number
-console.log(valueInNumber)*/
+console.log(valueInNumber)
 
 
 let no=30 // 
@@ -36,8 +36,27 @@ console.log(stringNumber)
 console.log(typeof stringNumber) // this line show the stringNumber type /no convert to string or not.
 
 
+//******************************************  operations ********************************** 
+
+let value=3// value zamang sara 1 variable dai aw mang warta 3 value assign kra 
+let negvlaue=-value//aw pa d line ki mang negvalue variable waghasto aw bya wrta mang minus value assign kra .
+console.log(negvlaue)
 
 
 
+//pa d mang multiple strig add kare d-
+let str1="pashto-"// da zamng sara 1st string dai
+let str2="programing"// da 2nd
+let str3="-zone"//aw 3rd
+let str4=str1+str2+str3// pa d ki zamng sara add shwe d ,
+console.log(str4)*/
 
+
+let myYoutubename="pashto-programing-zone"
+let anothername=myYoutubename
+console.log(anothername)
+anothername="mir"
+console.log(myYoutubename)
+
+console.log(anothername)
 
