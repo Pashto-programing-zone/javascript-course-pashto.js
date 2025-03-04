@@ -16,7 +16,7 @@ console.log(mycreatedDate.toDateString())
 
 let mytimeStamp= Date.now ()
 console.log(mytimeStamp)
-console.log(Math.floor(Date.now()/1000))*/
+console.log(Math.floor(Date.now()/1000))
 
 
 
