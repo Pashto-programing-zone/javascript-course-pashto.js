@@ -62,9 +62,12 @@ const users=[
 //console.log(course);
 
 
-const {instructore}=course// pa d line ki mang direct instructor da ( )na rawghsto 
-const {instructore:teacher}=course
+const {instructore}=course// pa d line ki mang direct instructor da (course object)na rawghsto aw console mo ko
 console.log(instructore);
+
+const {instructore:teacher}=course// pa d line ki mang instructore name short ko teacher ta mo converat ko yani destucture mo ko. aw bya mo teachar console ko
 console.log(teacher);
+
+
 
  
