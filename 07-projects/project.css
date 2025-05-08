@@ -1,0 +1,93 @@
+.buttons{
+    
+        padding: 30px 30px;
+    border: none;
+    background-color: salmon;
+    border-radius: 30px;
+    text-align-last: center;
+    box-sizing: border-box;color: white;
+    box-shadow: 50px;
+    transition: background-color 3s;
+    font-style:italic;
+    font-weight: bold;
+}
+.h1{
+    text-align: center;
+     background-color: aqua;
+     border: 10px salmon;
+    border-radius: 30px;
+    transition-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation: alternate;
+}
+
+
+#gray{
+    background-color:gray;
+    padding: 20px;
+border: none;
+border-radius: 50px;
+  border: 10px salmon;
+margin: 30px;
+text-align-last: center;
+box-sizing: border-box;color: white;
+box-shadow: 2px;
+transition: background-color 0.3s;
+font-style:italic;
+font-weight: bold;
+    
+}
+#blue{
+    background-color:blue;
+    padding: 20px;
+border: none;
+border-radius: 50px;
+margin: 30px;
+text-align-last: center;
+box-sizing: border-box;color: white;
+box-shadow: 2px;
+transition: background-color 0.3s;
+font-style:italic;
+font-weight: bold;
+}
+#pink{
+    background-color:pink;
+    padding: 20px;
+border: none;
+border-radius: 50px;
+margin: 30px;
+text-align-last: center;
+box-sizing: border-box;color: white;
+box-shadow: 2px;
+transition: background-color 0.3s;
+font-style:italic;
+font-weight: bold;
+}
+#green{
+    background-color:green;
+    padding: 20px;
+border: none;
+border-radius: 50px;
+margin: 30px;
+text-align-last: center;
+box-sizing: border-box;color: white;
+box-shadow: 2px;
+transition: background-color 0.3s;
+font-style:italic;
+font-weight: bold;
+}
+#red{
+    background-color:red;
+    padding: 20px;
+border: none;
+border-radius: 50px;
+margin: 30px;
+text-align-last: center;
+box-sizing: border-box;color: white;
+box-shadow: 2px;
+transition: background-color 0.3s;
+font-style:italic;
+font-weight: bold;
+}

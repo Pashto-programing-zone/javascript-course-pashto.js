@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html events</title>
+</head>
+<body style="background-color: gray; color: aliceblue;">
+    <h2>amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img id="park" width="200px" src="https://images.pexels.com/photos/29421579/pexels-photo-29421579.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="jula"></li>
+            <li><img id="photoshop" width="200px"  src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="photoshop"></li>
+            <li><img id="birds" width="200px"  src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="gongai"></li>
+            <li><img id="glass"  width="200px" src="https://images.pexels.com/photos/2522669/pexels-photo-2522669.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="glass"></li>
+            <li><a style="color: aliceblue;" href="https:google.com" id="google">google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // event bubling ,event capturing
+    // document.getElementById('glass').onclick= function(){
+    //     alert("this is glass")
+    // }
+    // document.getElementById('birds').addEventListener('click', function(){
+    //     alert("this is owl")
+    // },false )
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("click inside the ul");  },false )
+    document.getElementById('birds').addEventListener('click', function(e){
+        console.log("click owel");
+    
+    },false )
+
+    //*****************************************
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("click inside the ul");  },false )
+    // document.getElementById('birds').addEventListener('click', function(e){
+    //     console.log("click owel");
+    //     e.stopPropagation()//d line ki mang bobul ya campturing stop kw/boble mean false bara khatl,true captur lande
+    // },false )
+
+
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked event");
+        
+    // })
+
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.tagName); 
+    if(e.target.tagName==='IMG'){
+        console.log(e.target.id);
+        let removeit=e.target.parentNode
+                removeit.remove()
+    }
+                
+})
+
+</script>
+</html>

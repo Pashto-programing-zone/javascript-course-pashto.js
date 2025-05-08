@@ -1,0 +1,204 @@
+<!-- // 1:dom manifulation ki che kala inspect ta larsho aw bya console ta lar sho aw da waliko che : console.log(window) no mang ta structure  show ki
+// 2:aw ya pa console ki waliko che : console.log(document) no che sona document file e haga ba rki d ki danna der file e
+// 3:aw ka zamng makhsos file pakar e no mang ba dot. walagw aw file name ba waliko laka dasy , console.log(documents.links)
+// no pa d ki kho der links hm kedaisy no mang number bani hm katai sho laka dasy , console.log(document.links[3]) no mang ba direct 3 no link ta larso
+// 4:dasy pa dot bani mang der sa katai sho yawaze links na 
+// 5: ka charta mang da page base url che kow no mang ba leko che , console.log(document.baseURI)
+// document.getElementById('firstHeading').innerHTML="<h1>code with zainy</h1>"  => pa d line ki mang manifulation karai
+//document.getElementById('tittel').getAttribute('class')
+//document.getElementById('tittel').className => pa  d bni mng class name goro-->
+<!-- document.getElementById('tittel').setAttribute('class','set')  => che kala mang .setAttribute istemal ko no da value replace"OR"overwritekae
+ no mang da class value heading pa zai bani set wlagw aw ka mang wasara heading hm yo zai kw no 'set heading' ba waliko dwana ba rashe  -->
+ <!-- document.getElementById('tittel').setAttribute('class','set headind') -->
+ <!-- const title=document.getElementById('tittel')  che kala mang 1  veriable tittle ta assign ko no bya mng direct tittle lekalai sho  -->
+ <!-- tittle.style.borderRadius="5px"
+ tittle.style.pading="50px"
+ tittle.style.backgroundColor="pink" -->
+
+
+ <!-- tittle.textContent
+' DOM learning on code with zainy'
+tittle.innerHTML
+' DOM learning on code with zainy'
+tittle.innertext
+undefined
+tittle.innerText
+'DOM learning on code with zainy' -->
+
+
+
+
+title.innertext aw title.textContent ki srf da parq dai che kala p mang display styling apply  ko
+ no mang taba,  .innerText ki undefined rakae aw .tittel.textContent ki ba masg show kae  span ki che sa e
+
+ <h1 id="tittel" class="heading"> DOM learning on code with zainy <span style="display:none;"> test coding</span> </h1>
+tittle.innertext
+undefined
+tittle.textContent
+' DOM learning on code with zainy  test coding '
+
+
+
+document.querySelector('ul')// pa d line ki mang querySelector bani ul select ko .
+const myul=document.querySelector('ul')// aw pa d line ki myul variable ta mo assign 
+myul.querySelector('il')// bya mo direct myul bani querySelector walagwo 
+const green=myul.querySelector('il')// aw pa line ki mang green variable ta assign ko
+green.style.backgroundColor="green" // green.style bani mo wrla color change ko 
+green.style.fontSize="30px"// pa style ki mang harsa change kewalai sho somra che pa css ki sho
+green.innerText="five" // pa d line ki innerText pa mang value replace kra
+
+
+
+// che ka querySelectorAll ki mang 1 itemlist targit kw no da step d 
+document.querySelectorAll('il') // pa d line ki mo tol il select ko 
+const timp=document.querySelectorAll('il') // aw pa d line ki mo timp variable ta wachwoo
+timp// aw pa d ki mo timp bani waktl che list raghai knaa 
+timp[2].style.color="orange" //  pa d line ki variable timp [2] index bani che kam il dai hge la mo color orange ko
+
+
+document.getElementsByClassName('item-list')// pa d line ki .getElementsByClassName pa through item-list da className o haga mo access ko.
+const itemlist=document.getElementsByClassName('item-list')// pa d line ki mo itemlist variable ta assign ko
+itemlist            // pa d line ki mo check ko 
+Array.from('itemlist')// pa d line ke mo .from pa through da  item list na Array jor ko
+const mycoverteddArray=Array.from(itemlist)// pa d ki me bya 1 variable ta assign ko
+mycoverteddArray        // aw pa d line ki me bya chek ko
+mycoverteddArray.forEach((li)=>{      
+    li.style.color='orange'
+}) // aw bya mo p .forEach loop use ko .
+
+
+
+JavaScript DOM Manipulation – مکمل گائیڈ اردو میں
+
+1. DOM کیا ہوتا ہے؟
+
+DOM یعنی Document Object Model ایک درخت (Tree) کی شکل میں HTML کو ظاہر کرتا ہے۔ JavaScript اس کے ذریعے HTML کو پڑھ سکتی ہے اور تبدیل کر سکتی ہے۔
+
+
+---
+
+2. Elements کو Access کرنا
+
+ID سے
+
+const title = document.getElementById("main-title");
+
+Class سے
+
+const items = document.getElementsByClassName("item");
+
+Tag سے
+
+const paras = document.getElementsByTagName("p");
+
+Query Selector سے
+
+const firstItem = document.querySelector(".item"); // پہلا .item
+const allItems = document.querySelectorAll(".item"); // سارے .item
+
+
+---
+
+3. Content کو تبدیل کرنا
+
+textContent
+
+title.textContent = "نیا ٹائٹل";
+
+innerHTML
+
+title.innerHTML = "<span>HTML کے ساتھ اپڈیٹ</span>";
+
+innerText
+
+title.innerText = "سادہ ٹیکسٹ";
+
+
+---
+
+4. Style تبدیل کرنا
+
+title.style.color = "blue";
+title.style.fontSize = "30px";
+
+
+---
+
+5. Attributes تبدیل کرنا
+
+const img = document.querySelector("img");
+img.setAttribute("src", "new.jpg");
+img.setAttribute("alt", "نئی تصویر");
+
+
+---
+
+6. نیا Element بنانا اور جوڑنا
+
+const newDiv = document.createElement("div");
+newDiv.textContent = "میں نیا ڈوی ہوں!";
+document.body.appendChild(newDiv);
+
+
+---
+
+7. Element کو ہٹانا
+
+const removeMe = document.getElementById("remove-me");
+removeMe.remove();
+
+
+---
+
+8. Event لگانا (مثلاً Click)
+
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", function () {
+  alert("بٹن کلک ہوا!");
+});
+
+
+---
+
+9. Class کو Manage کرنا
+
+const box = document.querySelector(".box");
+
+box.classList.add("active");       // Class شامل کریں
+box.classList.remove("active");    // Class ہٹائیں
+box.classList.toggle("active");    // اگر ہے تو ہٹائے، نہیں ہے تو لگائے
+
+
+---
+
+10. DOM کے اندر گھومنا (Traversing)
+
+const parent = document.querySelector(".parent");
+const children = parent.children;
+
+const firstChild = parent.firstElementChild;
+const lastChild = parent.lastElementChild;
+
+const next = firstChild.nextElementSibling;
+const prev = lastChild.previousElementSibling;
+
+
+---
+
+حقیقی مثال: To-Do List میں نیا آئٹم شامل کرنا
+
+const input = document.querySelector("#todo-input");
+const btn = document.querySelector("#add-btn");
+const list = document.querySelector("#todo-list");
+
+btn.addEventListener("click", function () {
+  const newItem = document.createElement("li");
+  newItem.textContent = input.value;
+  list.appendChild(newItem);
+  input.value = "";
+});
+
+
+
+

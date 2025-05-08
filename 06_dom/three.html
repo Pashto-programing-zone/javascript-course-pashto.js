@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div= document.createElement('div')// pa d line ki mo createlement bni mo div creat ko.
+                      // aw by mo div variable ta assign ko
+    console.log(div);
+    div.className="main"// pa d line ki mo class name "main" warko
+    // div.id="myid"
+    // div.day*3
+    div.id=Math.round(Math.random()*10+1)// pa d line ki mang Math.random() function jor ko 
+    // aw by mo da 10 sara mulltiply ko + mo wasara wako aw by roundof ko aw id ta mo assign ko
+    div.setAttribute("title","code with zainy")// 1 attribute mo set ko . key value 
+    div.style.backgroundColor="pink"
+    div.style.color="gray"
+    div.style.padding="15px"
+    // div.innerText="code with zainy"
+    const addtext=document.createTextNode("codewithzainy")// pa d line ki mo 1 node create ko
+    div.appendChild(addtext)// pa d line ki mang  "codewithzainy" pa dive ki add ko." OR"
+   // div.innerText="codewithzainy"// pa d triqa hm mang text add kw
+    document.body.appendChild(div)// pa d line ki mang pa body ki tol code ko yani tol div mo add ko
+     
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favourite Languages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f9f9f9;
+    }
+
+    input {
+      padding: 8px 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 250px;
+    }
+
+    button {
+      padding: 8px 12px;
+      font-size: 16px;
+      margin-left: 10px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    ul.myfavouritenames {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    ul.myfavouritenames li {
+      background-color: white;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    ul.myfavouritenames li button {
+      background-color: #dc3545;
+    }
+
+    ul.myfavouritenames li button:hover {
+      background-color: #a71d2a;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🌐 Add Your Favourite Programming Languages</h2>
+
+  <input type="text" id="languageInput" placeholder="Enter language name" />
+  <button onclick="handleAddLanguage()">Add Language</button>
+
+  <ul class="myfavouritenames"></ul>
+
+  <script>
+    function createLanguageItem(lang) {
+      const li = document.createElement('li');
+
+      const span = document.createElement('span');
+      span.textContent = lang;
+
+      const deleteBtn = document.createElement('button');
+      deleteBtn.textContent = '❌';
+      deleteBtn.onclick = () => li.remove();
+
+      li.appendChild(span);
+      li.appendChild(deleteBtn);
+
+      document.querySelector('.myfavouritenames').appendChild(li);
+    }
+
+    function handleAddLanguage() {
+      const input = document.getElementById('languageInput');
+      const lang = input.value.trim();
+
+      if (lang) {
+        createLanguageItem(lang);
+        input.value = '';
+      } else {
+        alert('براہ کرم کوئی زبان لکھیں!');
+      }
+    }
+
+
+
+    function addlang(lname){
+    const newlang = document.createElement('li');
+    li.textContent = lname;
+    document.querySelector('.myfavouritenames').appendChild(li)
+
+}
+addlang('cpp')
+  </script>
+
+</body>
+</html>
